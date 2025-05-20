@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reddit Sentiment Explorer</title>
+
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="../static/css/styles.css" />
+</head>
+<body>
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Sentiment Analysis</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+          <li class="nav__item"><a href="#faqs" class="nav__link">FAQs</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact Us</a></li>
+        </ul>
+        <div class="nav__close" id="nav-close"><i class="ri-close-line"></i></div>
+      </div>
+
+      <div class="nav__btns">
+        <a href="/analyze" class="button nav__button">Get Started</a>
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line"></i></div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <h1 class="home__title">Reddit Sentiment Explorer <br /></h1>
+          <p class="home__description">
+            Discover what Reddit thinks about any topic. Just type in a keyword and get instant sentiment analysis.
+          </p>
+          <a href="/analyze" class="button button--flex">
+            Start Exploring <i class="ri-search-eye-line"></i>
+          </a>
+        </div>
+        <div class="home__img-container">
+          <img src="../static/img/hero.png" alt="Reddit Sentiment" class="home__img" />
+        </div>
+      </div>
+    </section>
+
+    <!--==================== STEPS ====================-->
+    <section class="steps section container">
+      <div class="steps__bg">
+        <h2 class="section__title-center steps__title">How It Works</h2>
+        <div class="steps__container grid">
+          <div class="steps__card">
+            <div class="steps__card-number">01</div>
+            <h3 class="steps__card-title">Enter a Topic</h3>
+            <p class="steps__card-description">Type a keyword or phrase you want to analyze sentiment for.</p>
+          </div>
+          <div class="steps__card">
+            <div class="steps__card-number">02</div>
+            <h3 class="steps__card-title">AI Analysis</h3>
+            <p class="steps__card-description">Our system scrapes Reddit posts and comments, then applies AI to detect sentiment.</p>
+          </div>
+          <div class="steps__card">
+            <div class="steps__card-number">03</div>
+            <h3 class="steps__card-title">View Insights</h3>
+            <p class="steps__card-description">See a breakdown of sentiment scores, trends, and top posts instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== FAQS ====================-->
+    <section class="questions section" id="faqs">
+      <h2 class="section__title-center questions__title container">Frequently Asked Questions</h2>
+      <div class="questions__container container grid">
+        <div class="questions__group">
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">What does this app do?</h3>
+            </header>
+            <div class="questions__content">
+              <p class="questions__description">
+                It analyzes Reddit discussions and shows sentiment insights for any topic using AI.
+              </p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">Is this free to use?</h3>
+            </header>
+            <div class="questions__content">
+              <p class="questions__description">Yes! You can explore any topic without needing to register or pay.</p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">How accurate is the analysis?</h3>
+            </header>
+            <div class="questions__content">
+              <p class="questions__description">
+                We use state-of-the-art language models to analyze sentiment. Accuracy depends on the data and context.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="questions__group">
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">Which subreddits are included?</h3>
+            </header>
+            <div class="questions__content">
+              <p class="questions__description">The app pulls data from a wide range of public subreddits based on the topic.</p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">Can I try different topics?</h3>
+            </header>
+            <div class="questions__content">
+              <p class="questions__description">Yes, you can search as many topics as you'd like. Each query generates fresh results.</p>
+            </div>
+          </div>
+
+          <div class="questions__item">
+            <header class="questions__header">
+              <i class="ri-add-line questions__icon"></i>
+              <h3 class="questions__item-title">How recent is the data?</h3>
+            </header>
+            <div class="questions__content">
+              <p class="questions__description">The app fetches recent posts from Reddit to ensure up-to-date sentiment trends.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section container" id="contact">
+      <div class="contact__container grid">
+        <div class="contact__box">
+          <h2 class="section__title">
+            Reach out to us today <br />via any of the info below
+          </h2>
+          <div class="contact__data">
+            <div class="contact__information">
+              <h3 class="contact__subtitle">Call us for support</h3>
+              <span class="contact__description"><i class="ri-phone-line contact__icon"></i> +999 888 777</span>
+            </div>
+            <div class="contact__information">
+              <h3 class="contact__subtitle">Email us</h3>
+              <span class="contact__description"><i class="ri-mail-line contact__icon"></i> support@redditexplorer.ai</span>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="contact__form">
+          <div class="contact__inputs">
+            <div class="contact__content">
+              <input type="email" placeholder=" " class="contact__input" />
+              <label for="" class="contact__label">Email</label>
+            </div>
+            <div class="contact__content">
+              <input type="text" placeholder=" " class="contact__input" />
+              <label for="" class="contact__label">Subject</label>
+            </div>
+            <div class="contact__content contact__area">
+              <textarea name="message" placeholder=" " class="contact__input"></textarea>
+              <label for="" class="contact__label">Message</label>
+            </div>
+          </div>
+          <button class="button button--flex">
+            Send Message <i class="ri-arrow-right-up-line button__icon"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section">
+    <div class="footer__container container grid">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">Reddit Explorer</a>
+        <h3 class="footer__title">Subscribe for updates</h3>
+        <div class="footer__subscribe">
+          <input type="email" placeholder="Enter your email" class="footer__input" />
+          <button class="button button--flex footer__button">
+            Subscribe <i class="ri-arrow-right-up-line button__icon"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Our Address</h3>
+        <ul class="footer__data">
+          <li class="footer__information">1234 Insight Blvd</li>
+          <li class="footer__information">Tech City, AI 98765</li>
+          <li class="footer__information">123-456-789</li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Follow Us</h3>
+        <ul class="footer__data">
+          <li class="footer__information">+999 888 777</li>
+          <div class="footer__social">
+            <a href="https://www.facebook.com/" class="footer__social-link"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/" class="footer__social-link"><i class="ri-instagram-line"></i></a>
+            <a href="https://twitter.com/" class="footer__social-link"><i class="ri-twitter-fill"></i></a>
+          </div>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">We accept</h3>
+        <div class="footer__cards">
+          <img src="../static/img/card1.png" alt="" class="footer__card" />
+          <img src="../static/img/card2.png" alt="" class="footer__card" />
+          <img src="../static/img/card3.png" alt="" class="footer__card" />
+          <img src="../static/img/card4.png" alt="" class="footer__card" />
+        </div>
+      </div>
+    </div>
+    <p class="footer__copy">&#169; Reddit Sentiment Explorer. All rights reserved.</p>
+  </footer>
+
+  <!--==================== SCROLL UP ====================-->
+  <a href="#" class="scrollup" id="scroll-up"><i class="ri-arrow-up-fill scrollup__icon"></i></a>
+
+  <!--==================== JS ====================-->
+  <script src="../static/js/scrollreveal.min.js"></script>
+  <script src="../static/js/main.js"></script>
+</body>
+</html>
